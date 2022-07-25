@@ -8,13 +8,18 @@
     <title>Hangman</title>
   </head>
   <body>
+    <div class="popUp hidden">
+      <div class="title"></div>
+      <div class="text"></div>
+      <img class="popUpImg" src="img/won.jpg" />
+      <button class="btn--newWord" onclick="startNewGame()">New game</button>
+    </div>
     <div class="container">
-      <h2 class="guess"></h2>
-      <h2 class="numberOfGuesses">
-        Number of guesses: <span class="guessesNo">10</span>/10
-      </h2>
+      <span class="guess"></span>
+      <div class="guess-display">(<span class="guessesNo">10</span>/10)</div>
       <div class="letters"></div>
     </div>
+    <div class="overlay hidden"></div>
     <script src="script/hangman.js"></script>
   </body>
 </html>
